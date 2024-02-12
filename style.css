@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #8a8a8a;
+    background-color: #f4eae5;
+}
+.logo{
+    border-radius: 100%;
+    padding-left: 25px;
+    width: 80px;
+}
+@media  (max-width: 725px) {
+    .nav-items {
+        display: none;
+    }
+    .header{
+        border: none;
+    }
+    .logo{
+        width: 75px;
+        padding-left: 5px;
+    }
+}
+
+.nav-items {
+    padding-right: 30px;
+}
+.nav-items > ul {
+    display: flex;
+}
+.nav-items > ul > li{
+    font-size: 1.25rem;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.contact {
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: rgb(239, 67, 51);
+    color: aliceblue;
+    margin: 5px;
+}
+.contact:hover {
+    background-color: rgb(203, 86, 35);
+}
+.login {
+    display: flex;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+.log{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px; 
+}
+.loginc {
+    background-color:  rgb(239, 67, 51);
+    color: aliceblue;
+}
+.loginc:hover {
+    background-color: rgb(203, 86, 35);
+}
+
+
+
+
+
+/* this is for Cart section */
+
+.res-container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.res-card{
+    width: 330px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+.res-card:hover{
+    transform: scale(0.95, 0.95);
+}
+.res-logo {
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(132, 132, 132);
+    height: 200px;
+    width: 100%;
+}
+.inside_rCon{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.inside_rCon > li{
+    font-weight: bold;
+}
+.rating {
+    color: rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 5px;
+}
+.rCon{
+    text-align: center;
+}
+
+
+
+/* Footer */
+.footer{
+    background-color: rgb(52, 63, 94);
+}
+.footer-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(52, 63, 94);
+
+}
+.footer-logo{
+    width: 225px;
+}
+.footer-nv > ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.footer-nv > ul > li{
+    color: aliceblue;
+    list-style: none;
+    padding: 10px;
+}
+
+.creator{
+    background-color: rgb(42, 43, 57);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.creator > p {
+    font-size: 0.7rem;
+}
+
+/* React Hook Button*/
+
+.fliter-btn :hover {
+    background-color: rgb(203, 86, 35) ;
+}
+.fliter-btn {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 25px;
+    cursor: pointer;
+    color: aliceblue;
+    border: 1px solid white;
+    font-size: 1rem;
+    background-color: rgb(239, 67, 51);
+}
