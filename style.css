@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Noto Sans", sans-serif;
 }
 
 .header{
@@ -11,11 +12,13 @@
     border: 1px solid #8a8a8a;
     background-color: #f4eae5;
 }
+
 .logo{
     border-radius: 100%;
     padding-left: 25px;
     width: 80px;
 }
+
 @media  (max-width: 725px) {
     .nav-items {
         display: none;
@@ -66,6 +69,7 @@
     border-radius: 10px; 
 }
 .loginc {
+    cursor: pointer;
     background-color:  rgb(239, 67, 51);
     color: aliceblue;
 }
@@ -108,7 +112,7 @@
     font-weight: bold;
 }
 .rating {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     border-radius: 7px;
     padding: 5px;
 }
@@ -158,16 +162,79 @@
 
 /* React Hook Button*/
 
-.fliter-btn :hover {
-    background-color: rgb(203, 86, 35) ;
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+.filter-left {
+    border-radius: 0.35rem;
+    padding: 0.35rem;
+    margin: 1.5rem ;
+}
+.input {
+    padding: 0.45rem;
+    margin: 0.2rem ;
+}
+
+.search-img {
+    width: 1.5rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+.input-btn {
+    padding: 0.35rem;
 }
 .fliter-btn {
-    border-radius: 5px;
-    padding: 5px;
-    margin: 25px;
+    border-radius: 0.35rem;
+    padding: 0.35rem;
+    margin: 1.2rem;
     cursor: pointer;
     color: aliceblue;
     border: 1px solid white;
     font-size: 1rem;
     background-color: rgb(239, 67, 51);
+}
+.fliter-btn:hover {
+    background-color: rgb(203, 86, 35);
+}
+
+/* For Shimmer */
+
+.shimmer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.inside-shimmer {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 320px;
+    padding: auto;
+    border-radius: 1.2rem;
+    background-color:  #f5f5f5c2;
+    margin: 20px;
+}
+.img-shimmer{
+    border-radius: 1.2rem;
+    background-color: #efefef;
+    width: 330px;
+    height: 200px;
+}
+
+.txt-shimmer-large {
+    margin: 20px;
+    height: 0.5rem;
+    background-color: #ececec;
+    width: 200px;
+}
+
+.txt-shimmer {
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 0.5rem;
+    background-color: #ececec;
+    width: 100px;
 }
