@@ -1,6 +1,9 @@
 import ResCard from "./ResCard";
 import {useState, useEffect} from "react";  
 import Shimmer from "./Shimmer";
+import About from "./About";
+import Contact from "./Contact";
+import Error from "./Error";
 
 const Body =()=>{
     let [ListRes, setListRes] = useState([]);
