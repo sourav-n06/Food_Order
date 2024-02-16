@@ -20,6 +20,7 @@ const Body =()=>{
         
         setListRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfilterData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+
     };
     if(ListRes.length === 0) return <Shimmer/>;
 
