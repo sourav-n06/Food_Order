@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Noto Sans", sans-serif;
+    list-style-type: none;
 }
 
 .header{
@@ -38,7 +39,7 @@
 .nav-items > ul {
     display: flex;
 }
-.nav-items > ul > li{
+.nav-items > ul > li {
     font-size: 1.25rem;
     list-style-type: none;
     padding: 20px;

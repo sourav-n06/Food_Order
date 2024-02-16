@@ -39,6 +39,8 @@ import Footer from "./src/components/Footer";
 import About from "./src/components/About";
 import Contact from "./src/components/Contact";
 import Error from "./src/components/Error";
+import Home from './src/components/Home';
+import ResMenu from './src/components/ResMenu';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
     const AppLayout = () =>{
@@ -58,12 +60,20 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
                     element : <Body/>
                 },
                 {
+                    path : "/home",
+                    element :< Home/>
+                },
+                {
                     path : "/about",
                     element :< About/>
                 },
                 {
                     path : "/contact",
                     element :< Contact/>
+                },
+                {
+                    path : "/restaurants/:resId",
+                    element :< ResMenu/>
                 }
             ],
             errorElement : <Error />
