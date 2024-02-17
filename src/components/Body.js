@@ -47,8 +47,6 @@ const Body =()=>{
                         }} > Top Retaled Resturent 
                     </button>
                 </div>
-                
-                
             </div>
             
             <div className="res-container">

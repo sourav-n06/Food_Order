@@ -42,6 +42,7 @@ import Error from "./src/components/Error";
 import Home from './src/components/Home';
 import ResMenu from './src/components/ResMenu';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import ResMenuShimmer from './src/components/ResMenuShimmer';
 
     const AppLayout = () =>{
         return (<div className ="app">
@@ -61,7 +62,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
                 },
                 {
                     path : "/home",
-                    element :< Home/>
+                    element :< Body/>
                 },
                 {
                     path : "/about",
@@ -72,7 +73,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
                     element :< Contact/>
                 },
                 {
-                    path : "/restaurants/:resId",
+                    path : "/restaurants/:id",
                     element :< ResMenu/>
                 }
             ],

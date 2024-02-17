@@ -41,7 +41,6 @@
 }
 .nav-items > ul > li {
     font-size: 1.25rem;
-    list-style-type: none;
     padding: 20px;
 }
 
@@ -167,6 +166,8 @@
 .filter {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
 }
 .filter-left {
     border-radius: 0.35rem;
@@ -180,7 +181,7 @@
 
 .search-img {
     width: 1.5rem;
-    height: 1.1rem;
+    height: 1rem;
     cursor: pointer;
 }
 .input-btn {
@@ -238,4 +239,180 @@
     height: 0.5rem;
     background-color: #ececec;
     width: 100px;
+}
+
+
+
+/* Delivery item */
+.menuTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 20rem 0rem 20rem ;
+    padding: 5rem 0rem 2rem 0rem;
+    border-bottom: 0.05rem dashed #aca7a7;
+}
+@media  (max-width: 880px){
+    .menuTop{
+        margin: 1rem 4rem 1rem 4rem;
+    }
+}
+.deli-img {
+    padding-right: 0.5rem;
+    width: 2.5rem;
+}
+.menuCuisine {
+ padding: 0.6rem 0rem;
+}
+.menuArea{
+    padding-bottom: 0.6rem;
+}
+.grayTxt{
+    color: #9f9c9c;
+}
+.txtSiz{
+    font-size: small ;
+}
+.menuTopNested {
+    display: flex;
+    margin: 1rem 20rem 1rem 20rem ;
+    justify-content: space-between;
+    width: 18rem;
+}
+@media  (max-width: 725px){
+    .menuTopNested{
+        flex-direction: column;
+        margin: 1rem 4rem 1rem 4rem;
+    }
+}
+.delivaryTime {
+    padding: 0.2rem;
+    display: flex;
+}
+.delivaryTime-logo{
+    padding-right: 0.4rem;
+    width: 1.5rem;
+}
+.costTwo{
+    align-items: center;
+    display: flex;
+}
+.costTwo-logo{
+    padding-right: 0.4rem;
+    height: 0.9rem;
+    width: 0.8rem;
+}
+.menuTop-right{
+    display: flex;
+    border-radius: 0.5rem;
+    border: 1px solid #cbc4c4;
+    padding: 0.6rem 0.4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer{
+    display: flex;
+    overflow: hidden;
+    scrollbar-gutter: stable;
+    margin: 0rem 20rem 0rem 20rem ;
+}
+
+.offerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    height: 3.5rem;
+    width: 20rem;
+    border: 1px solid #cbc4c4;
+    border-radius: 3px;
+}
+
+.offerMenu-top {
+    text-align: center;
+    color: #807f7f;
+    font-size: 0.9rem;
+    font-weight : bold;
+}
+.offerMenu-bottom {
+    text-align: center;
+    color: #aca7a7;
+    font-size: 0.8rem;
+    font-weight : bold;
+}
+
+.middle{
+    font-weight: 0.5rem ;
+    font-size: 1.25rem;
+    margin: 2rem 20rem 2rem 20rem ;
+    padding-bottom: 2rem;
+}
+
+.recommended{
+    margin: 0rem 20rem 0rem 20rem ;
+
+}
+.cartMemu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0rem 2.5rem 0rem;
+    border-bottom: 1px solid #9f9c9c;
+}
+.CartMemu-img{
+    border-radius: 8px;
+    width: 12.5rem;
+}
+
+.cart_details{
+    padding: 0.3rem;
+}
+.add:hover {
+    cursor: pointer;
+    background-color: rgb(57, 170, 53);
+}
+.add{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.3rem;
+    width: 3rem;
+    background-color: rgb(59, 221, 53);
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.menuShimmer{
+    margin: 5rem 20rem 5rem 20rem ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menuShimmerOuter{
+    border-radius: 10px;
+    height: 25rem;
+    width: 30rem;
+    margin: 20px;
+    background-color: #f4f4f4e3;
+}
+.menuShimmerLeft{
+    background-color: #efefeff6;
+    margin: 1.1rem;
+    height: 12rem;
+    width: 28rem;
+}
+.menuShimmertxtSmall{
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    width: 20rem;
+    height: 1rem;
+    background-color: #efefeff6;
+}
+.menuShimmertxtLarge{
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    width: 15rem;
+    height: 1rem;
+    background-color: #efefeff6;
 }

@@ -1,37 +1,37 @@
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
     const [LogStts, setLogStts] = useState("Log in");
     return (
         <div className = "header">
             <div className = "logo-container">
-                <img className = "logo" src = {LOGO_URL}/>
+            <Link to = "/" >  <img className = "logo" src = {LOGO_URL}/> </Link>
             </div>
             <div className = "nav-items">
                 <ul>
                    <li> 
-                        <Link to = "/home"> 
+                        <NavLink to = "/home" style={{ textDecoration: 'none', color: 'inherit' }}> 
                             Home 
-                        </Link>
+                        </NavLink>
                     </li>
 
                     <li>
-                        <Link to = "/cart"> 
+                        <NavLink  to = "/cart" style={{ textDecoration: 'none', color: 'inherit' }}> 
                             Cart
-                        </Link> 
+                        </NavLink> 
                     </li> 
                             
                      <li>
-                        <Link to = "/about">
+                        <NavLink to = "/about" style={{ textDecoration: 'none', color: 'inherit' }}>
                             About Us
-                        </Link> 
+                        </NavLink> 
                     </li> 
                     <li className = "contact"> 
-                        <Link to = "/contact">
+                        <NavLink to = "/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
                             Contact Us
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </div>
