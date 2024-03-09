@@ -1,5 +1,5 @@
 import React from 'react';
-import Shimmer from './Shimmer';
+import UserShimmer from './UserShimmer';
 class User extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +16,7 @@ class User extends React.Component {
         });
     }
     render() {
-        if (!this.state.userInfo ) return <Shimmer/>
+        if (!this.state.userInfo ) return <UserShimmer/>
         const { name, avatar_url, location, html_url} =this.state.userInfo;
         return (<div className="UserOuter">
                     <div className = "UserLeft">
@@ -32,7 +32,6 @@ class User extends React.Component {
                         <h3 className ="UserLocation userMargin">Location : {location}</h3>
 
                     </div>
-
                 </div>)
     }
 }

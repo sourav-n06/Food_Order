@@ -433,8 +433,41 @@
 }
 .userDetails{
     text-align: center;
-    margin: 3dvb;
+    margin: 3rem;
 }
 .userMargin{
     margin-bottom: 1rem;
+}
+/* Shimmer About*/
+.userShimmer{
+    display: flex;
+    margin: 3rem;
+}
+.userShimmerImg{
+    width: 20rem;
+    height: 24rem;
+    background-color: #f3f2f2;
+    border-radius: 1rem;
+}
+.userShimmerTxt{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+
+}
+.userShimmerFirstTxt{
+    width: 60rem;
+    height: 1.5rem;
+    background-color: #f3f2f2;
+    margin-bottom: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.userShimmerSecondTxt{
+    width: 40rem;
+    height: 1.5rem;
+    background-color: #f3f2f2;
+    margin-bottom: 2.5rem;
+    border-radius: 0.5rem;
+
 }
