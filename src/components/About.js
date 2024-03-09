@@ -1,9 +1,12 @@
+import User from './User'
+
 const About = () =>{
     return (
         <div>
-            <h1>About</h1>
-            <h2>Welcome To Our Page</h2>
+            <h2 className="userDetails"> Creator Details </h2>
+            <User/>
         </div>
+        
     )
 };
 

@@ -12,3 +12,4 @@ export const Delivery_Cycle_URL = "https://e7.pngegg.com/pngimages/208/107/png-c
 export const Delivery_Timeline_URL = "https://cdn4.iconfinder.com/data/icons/global-logistics-4/68/clock_rushing_delivery_time_2-512.png";
 
 export const Rupees_URL = "https://www.freeiconspng.com/uploads/rupees-symbol-png-0.png";
+

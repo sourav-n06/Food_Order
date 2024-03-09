@@ -416,3 +416,25 @@
     height: 1rem;
     background-color: #efefeff6;
 }
+ /* About Section*/
+.UserOuter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+.UserImg{
+    width: 20rem;
+    border-radius: 1rem;
+}
+.UserRight{
+    width: 80rem;
+}
+.userDetails{
+    text-align: center;
+    margin: 3dvb;
+}
+.userMargin{
+    margin-bottom: 1rem;
+}
