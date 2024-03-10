@@ -474,13 +474,12 @@
 
 .Offline{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 .OffLogo{
-    width: 28.5rem;
+    width: 22.5rem;
 }
 .OffTxtLi{
     margin: 0.5rem;

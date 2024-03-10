@@ -5,7 +5,7 @@ OfflinePage = () => {
     return (
         <div className="Offline">
             <div className="OffTop"> 
-                <img className= "OffLogo" src = "https://img.freepik.com/premium-vector/cute-alien-flying-planet-with-ufo-meteorite-space-cartoon-icon-illustration_138676-2903.jpg?w=740"/>
+                <img className= "OffLogo" src = "https://i.pinimg.com/564x/8c/15/e5/8c15e504b4cdb2d8f4bcba5bccd56b88.jpg"/>
             </div>
 
             <div className= "OffBottom">
