@@ -5,20 +5,13 @@ import {useParams} from "react-router-dom"
 import ResMenu2 from "./ResMenu2";
 import ResMenu3 from "./ResMenu3";
 import ResMenuShimmer from "./ResMenuShimmer";
+import useResList from "../utils/useResList";
 
 const ResMenu = () => {
     const{ id } = useParams();
-    const [menuList, setmenuList] = useState(null)
 
-    useEffect(() => {
-        fetchData();
-    }, []);
+    menuList = useResList(id);  // Coustom Hook for Fetching data and make it for Abstruct and Readable
 
-    const fetchData = async() => {
-        const data = await fetch( "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.572646&lng=88.36389500000001&restaurantId="+ id );
-        const json = await data.json();
-        setmenuList(json?.data); //complete later
-    }
     if(menuList == null) return <ResMenuShimmer/>;
 
        const {info} = menuList?.cards[0]?.card?.card;

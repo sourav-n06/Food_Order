@@ -350,11 +350,11 @@
     font-size: 1.25rem;
     margin: 2rem 20rem 2rem 20rem ;
     padding-bottom: 2rem;
+    border-bottom:1px solid #807f7f;
 }
 
 .recommended{
     margin: 0rem 20rem 0rem 20rem ;
-
 }
 .cartMemu {
     display: flex;
@@ -492,3 +492,55 @@
 .OffTxt{
     margin: 0.5rem;
 }
+
+/*Error page*/
+
+.page_404{ padding:10px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 60vh;
+    width: 50vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    background-position: center;
+ }
+ 
+ 
+.four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+.four_zero_four_bg h3{
+       font-size:80px;
+       }
+       
+.link_404{      
+  color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 7.5px;
+}
+.link_404:hover{
+    background: #209118;
+}
+  .contant_box_404{ margin-top:-10px;}
+
+  .text-center{
+    text-align: center;
+  }
+  .errtxt{
+    font-size: 4rem;
+    margin: 0px;
+    padding: 0px;
+  }
