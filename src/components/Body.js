@@ -1,12 +1,15 @@
 import ResCard from "./ResCard";
 import {useState, useEffect} from "react";  
 import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import OfflinePage from "./OfflinePage";
 
 
 const Body =()=>{
     let [ListRes, setListRes] = useState([]);
     let [findTxt, setfindTxt] = useState("");
     let [filterData, setfilterData] =useState([]);
+    let onlineStts = useOnlineStatus();
 
     useEffect(() => {
         fetchData();
@@ -22,8 +25,11 @@ const Body =()=>{
         setfilterData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     };
+    
+    if(!onlineStts) return <OfflinePage/>;
+    
     if(ListRes.length === 0) return <Shimmer/>;
-
+    
     return (
         <div className="body">
             {/* <div className="search">Search</div> */}

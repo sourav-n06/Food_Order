@@ -471,3 +471,24 @@
     border-radius: 0.5rem;
 
 }
+
+.Offline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.OffLogo{
+    width: 28.5rem;
+}
+.OffTxtLi{
+    margin: 0.5rem;
+    font-size: larger;
+}
+.OffTxtLi > u {
+    font-weight: bold;
+}
+.OffTxt{
+    margin: 0.5rem;
+}

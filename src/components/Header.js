@@ -1,9 +1,12 @@
 import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
     const [LogStts, setLogStts] = useState("Log in");
+    const onlineStts = useOnlineStatus();
+
     return (
         <div className = "header">
             <div className = "logo-container">
@@ -36,6 +39,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="login">
+                    <h4>Online Status : {onlineStts ? "🟢" : "🔴"}</h4>
+
                     <h4 className="log loginc" onClick = {()=> {
                         if(LogStts == "Log in") setLogStts("Log Out")
                         else setLogStts("Log in")

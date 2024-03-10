@@ -43,6 +43,7 @@ import Home from './src/components/Home';
 import ResMenu from './src/components/ResMenu';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ResMenuShimmer from './src/components/ResMenuShimmer';
+import OfflinePage from './src/components/OfflinePage';
 
     const AppLayout = () =>{
         return (<div className ="app">
@@ -62,7 +63,7 @@ import ResMenuShimmer from './src/components/ResMenuShimmer';
                 },
                 {
                     path : "/home",
-                    element :< Body/>
+                    element :<Body/>
                 },
                 {
                     path : "/about",
