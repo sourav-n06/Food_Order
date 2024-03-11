@@ -551,5 +551,36 @@
     font-size: 1.3rem;
     font-weight:1000;
     margin-top: 9.5rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
+  }
+
+  /*Banner Foods*/
+
+  .bannerFoodsImg{
+    display: flex;
+    width: 70%;
+    overflow-x: scroll !important;
+    height: 13rem;
+    margin: auto;
+    padding: 2.5rem;
+    border-bottom: 1px solid #807f7f;
+  }
+  .bannerFoodsImg::-webkit-scrollbar {
+    display: none;
+  }
+  .bannerFoodsInnerImg{
+    width: 10rem;
+  }
+  .bannerFoodsTxt{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight:1000;
+    text-align: center;
+  }
+.ResFoodsTxt{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight:1000;
+    text-align: center;
+    padding: 3rem;
   }

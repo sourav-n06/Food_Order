@@ -4,13 +4,18 @@ import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflinePage from "./OfflinePage";
 import ResCardWithOffer from "./ResCardWithOffer";
+import useBanner from "../utils/useBanner";
+import { Banner_imgs } from "../utils/constants";
 
 const Body =()=>{
     let [ListRes, setListRes] = useState([]);
     let [findTxt, setfindTxt] = useState("");
     let [filterData, setfilterData] =useState([]);
-    let onlineStts = useOnlineStatus();
+    const[bannerList, setbannerList] = useState([]);
 
+    let onlineStts = useOnlineStatus();
+    const banner = useBanner();
+    
     const ResCardOffer = ResCardWithOffer(ResCard); // Higher Order Function 
 
     useEffect(() => {
@@ -21,22 +26,29 @@ const Body =()=>{
 
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LI");
 
+
+
         const json = await data.json();
+
         
         setListRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfilterData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-
     };
-    console.log(ListRes);
+
+    console.log(banner);
+
     if(!onlineStts) return <OfflinePage/>;
     
     if(ListRes.length === 0) return <Shimmer/>;
     
+
+
     return (
         <div className="body">
             {/* <div className="search">Search</div> */}
 
             <div className = "filter">
+
                 <div className ="filter-left">
                     <input className = "input" type = "text" value = {findTxt} onChange = {(txt) => {
                             setfindTxt(txt.target.value);
@@ -48,6 +60,8 @@ const Body =()=>{
                         setfilterData(filterTxt);
                     }}><img className= "search-img" src="https://www.freeiconspng.com/uploads/search-icon-png-5.png" alt="Icon Free Image Search" /></button>
                 </div>
+
+
                 <div className ="filter-right">
                     <button className = "fliter-btn" onClick = {() => {
                         const filtered = ListRes.filter((res) => res.info.avgRating > 4);
@@ -56,7 +70,21 @@ const Body =()=>{
                     </button>
                 </div>
             </div>
-            
+
+
+            <div className="bannerFoods">
+                <div className="bannerFoodsTxt">What's on your mind?</div>
+                <div className="bannerFoodsImg">
+                    {
+                        banner?.info.map((food) => {
+                            return (<img key = {food.id} className="bannerFoodsInnerImg" src = {Banner_imgs + food.imageId}></img>)
+                        })
+                    }
+                </div>
+            </div>
+
+            <div className="ResFoodsTxt">Top restaurant chains in Kolkata </div>
+
             <div className="res-container">
                 {
                     filterData.map((resturent) => {
