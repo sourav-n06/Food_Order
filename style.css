@@ -544,3 +544,12 @@
     margin: 0px;
     padding: 0px;
   }
+
+  .offerLabel{
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight:1000;
+    margin-top: 9.5rem;
+    margin-left: 5rem;
+  }

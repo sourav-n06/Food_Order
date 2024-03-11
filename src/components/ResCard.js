@@ -11,7 +11,6 @@ const ResCard =(props) => {
           cuisines, 
           sla,
         } =  resData?.info;
-
         let bgColor;
         if (avgRating < 4) {
             bgColor = "#eabd43";

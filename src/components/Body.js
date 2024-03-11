@@ -3,13 +3,15 @@ import {useState, useEffect} from "react";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import OfflinePage from "./OfflinePage";
-
+import ResCardWithOffer from "./ResCardWithOffer";
 
 const Body =()=>{
     let [ListRes, setListRes] = useState([]);
     let [findTxt, setfindTxt] = useState("");
     let [filterData, setfilterData] =useState([]);
     let onlineStts = useOnlineStatus();
+
+    const ResCardOffer = ResCardWithOffer(ResCard); // Higher Order Function 
 
     useEffect(() => {
         fetchData();
@@ -25,7 +27,7 @@ const Body =()=>{
         setfilterData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     };
-    
+    console.log(ListRes);
     if(!onlineStts) return <OfflinePage/>;
     
     if(ListRes.length === 0) return <Shimmer/>;
@@ -57,7 +59,12 @@ const Body =()=>{
             
             <div className="res-container">
                 {
-                    filterData.map((resturent) => <ResCard key = {resturent.info.id} resData={resturent}/>)
+                    filterData.map((resturent) => {
+                        // when this condition will true then we call Our Higher Order Function
+                        return resturent.info.isOpen === true ?
+                        (<ResCardOffer key = {resturent.info.id} resData={resturent}/>) :
+                        (<ResCard key = {resturent.info.id} resData={resturent}/>)
+                    })
                 }
             </div>
         </div>
