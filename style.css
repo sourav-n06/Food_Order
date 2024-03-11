@@ -89,18 +89,18 @@
     justify-content: center;
 }
 .res-card{
-    width: 330px;
-    padding: 20px;
-    border-radius: 20px;
+    width: 17.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
     transition: all 0.2s ease;
 }
 .res-card:hover{
     transform: scale(0.95, 0.95);
 }
 .res-logo {
-    border-radius: 10px;
+    border-radius: 0.8rem;
     box-shadow: 0px 2px 5px rgb(132, 132, 132);
-    height: 200px;
+    height: 11rem;
     width: 100%;
 }
 .inside_rCon{
@@ -477,6 +477,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
+    height: 55vh;
 }
 .OffLogo{
     width: 22.5rem;
