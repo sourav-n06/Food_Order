@@ -58,7 +58,7 @@ const Body =()=>{
                         res.info.name.toLowerCase().includes(findTxt.toLowerCase()));
 
                         setfilterData(filterTxt);
-                    }}><img className= "search-img" src="https://www.freeiconspng.com/uploads/search-icon-png-5.png" alt="Icon Free Image Search" /></button>
+                    }}>Search</button>
                 </div>
 
 

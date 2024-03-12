@@ -177,6 +177,7 @@
 .input {
     padding: 0.45rem;
     margin: 0.2rem ;
+    border-radius: 0.3rem;
 }
 
 .search-img {
@@ -185,7 +186,16 @@
     cursor: pointer;
 }
 .input-btn {
-    padding: 0.35rem;
+    padding: 0.5rem;
+    background-color: #50c547;
+    border: none;
+    color: #fff;
+    font-weight:bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.input-btn:hover {
+    background-color: #4eb347;
 }
 .fliter-btn {
     border-radius: 0.35rem;
@@ -359,12 +369,12 @@
 .cartMemu {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0rem 2.5rem 0rem;
+    padding: 1.5rem 0rem 0.8rem 0rem;
     border-bottom: 1px solid #9f9c9c;
 }
 .CartMemu-img{
     border-radius: 8px;
-    width: 12.5rem;
+    width: 10rem;
 }
 
 .cart_details{
@@ -583,4 +593,25 @@
     font-weight:1000;
     text-align: center;
     padding: 3rem;
+  }
+
+  .catagoryAccordionTxt{
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .catagoryAccordion{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 0.2rem;
+    margin: 0.3rem;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+  .catagory {
+    margin: 0rem 20rem 0rem 20rem ;
+  }
+  .catagoryAccordionShadow{
+    height: 0.8rem;
+    background-color: #e2dfdf;
   }
