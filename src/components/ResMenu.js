@@ -13,6 +13,8 @@ const ResMenu = () => {
 
     menuList = useResList(id);  // Coustom Hook for Fetching data and make it for Abstruct and Readable
 
+    const [showItem, setShowItem] = useState(1);
+
     if(menuList == null) return <ResMenuShimmer/>;
 
        const {info} = menuList?.cards[0]?.card?.card;
@@ -45,8 +47,12 @@ const ResMenu = () => {
                 }
             </div> */}
             {
-                catagories.map((catagory) => 
-                (<ResCatagory key = {catagory?.card?.card?.title} data = {catagory?.card?.card} />))
+                catagories.map((catagory, index) => 
+                (<ResCatagory key = {catagory?.card?.card?.title} 
+                data = {catagory?.card?.card} 
+                ShowItem = {index === showItem ? true : false} 
+                setShowItem = {() => {setShowItem(index)}}/>))
+                // Lifting State Up
             }
         </div>
     )

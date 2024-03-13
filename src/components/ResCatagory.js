@@ -1,10 +1,9 @@
 import ResMenu3 from "./ResMenu3";
 import { useState } from "react";
 import ResMenu4 from "./ResMenu4";
-const ResCatagory = ({data}) => {
-    const [ShowItem, setShowItem] = useState(true)
+const ResCatagory = ({data, ShowItem, setShowItem}) => {
     const handleClick = () => {
-        setShowItem(!ShowItem);
+        setShowItem();
     };
     return (
         <div className="catagory">

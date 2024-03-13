@@ -26,16 +26,12 @@ const Body =()=>{
 
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.51800&lng=88.38320&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LI");
 
-
-
         const json = await data.json();
 
-        
         setListRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        
         setfilterData(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-
-    console.log(banner);
 
     if(!onlineStts) return <OfflinePage/>;
     

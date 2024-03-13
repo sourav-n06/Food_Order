@@ -89,8 +89,8 @@
     justify-content: center;
 }
 .res-card{
-    width: 17.5rem;
-    padding: 1rem;
+    width: 16rem;
+    margin: 1rem;
     border-radius: 0.8rem;
     transition: all 0.2s ease;
 }
@@ -374,7 +374,8 @@
 }
 .CartMemu-img{
     border-radius: 8px;
-    width: 10rem;
+    width: 9rem;
+    height: 7rem;
 }
 
 .cart_details{
@@ -558,10 +559,10 @@
   .offerLabel{
     position: absolute;
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight:1000;
     margin-top: 9.5rem;
-    margin-left: 4rem;
+    margin-left: 3.5rem;
   }
 
   /*Banner Foods*/
@@ -573,7 +574,7 @@
     height: 13rem;
     margin: auto;
     padding: 2.5rem;
-    border-bottom: 1px solid #807f7f;
+    border-bottom: 1.5px solid #b4b3b3;
   }
   .bannerFoodsImg::-webkit-scrollbar {
     display: none;
@@ -597,7 +598,8 @@
 
   .catagoryAccordionTxt{
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #323232;
   }
   .catagoryAccordion{
     display: flex;
