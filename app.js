@@ -44,13 +44,22 @@ import ResMenu from './src/components/ResMenu';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ResMenuShimmer from './src/components/ResMenuShimmer';
 import OfflinePage from './src/components/OfflinePage';
+import appStore from './src/utils/appStore';
+import {Provider} from 'react-redux'
+import Cart from './src/components/cart';
+
+
 
     const AppLayout = () =>{
-        return (<div className ="app">
-            <Header/>
-            <Outlet/>
-            <Footer/>
-        </div>)
+        return (
+                <Provider store ={appStore }>
+                    <div className ="app">
+                        <Header/>
+                        <Outlet/>
+                        <Footer/>
+                    </div>
+              </Provider>
+        )
     }
 
     const appRouter = createBrowserRouter([
@@ -74,9 +83,14 @@ import OfflinePage from './src/components/OfflinePage';
                     element :< Contact/>
                 },
                 {
+                    path : "/cart",
+                    element :< Cart/>
+                },
+                {
                     path : "/restaurants/:id",
                     element :< ResMenu/>
-                }
+                },
+                
             ],
             errorElement : <Error />
         },

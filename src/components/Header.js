@@ -2,10 +2,13 @@ import { LOGO_URL } from "../utils/constants";
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { useSelector } from "react-redux"
+
 
 const Header = () => {
     const [LogStts, setLogStts] = useState("Log in");
     const onlineStts = useOnlineStatus();
+    const cartItems = useSelector((store) => store.cart.items);
 
     return (
         <div className = "header">
@@ -22,7 +25,7 @@ const Header = () => {
 
                     <li>
                         <NavLink  to = "/cart" style={{ textDecoration: 'none', color: 'inherit' }}> 
-                            Cart
+                            Cart - { cartItems.length}
                         </NavLink> 
                     </li> 
                             
