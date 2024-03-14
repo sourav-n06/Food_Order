@@ -13,7 +13,7 @@ const ResMenu = () => {
 
     menuList = useResList(id);  // Coustom Hook for Fetching data and make it for Abstruct and Readable
 
-    const [showItem, setShowItem] = useState(1);
+    const [showItem, setShowItem] = useState(0);
 
     if(menuList == null) return <ResMenuShimmer/>;
 
