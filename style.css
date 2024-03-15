@@ -51,11 +51,6 @@
     color: #ffae3c;
 }
 
-.contact {
-}
-.contact:hover {
-    color: #cf800b;
-}
 .login {
     display: flex;
 }
@@ -693,4 +688,68 @@
     justify-content: space-between;
     display: flex;
     padding: 1.5rem;
+}
+.ContactFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactFlexLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    background-color: #ececec;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+    padding-top: 1.25rem;
+    box-sizing: border-box;
+}
+.ContactFlexRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    background-color: #ececec;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+    padding-top: 1.25rem;
+    box-sizing: border-box;
+}
+
+.ContactFlexHead{
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #042d0d;
+    padding: 3rem;
+}
+.ContactFlexTxt{
+    text-align: center;
+    padding: 0.5rem;
+    color: #807f7f;
+    margin-bottom: 0.8rem;
+}
+.ContactFlexBtn{
+    margin: auto;
+    padding: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    background-color: #042d0d;
+    cursor: pointer;
+}
+.ContactHeading{
+    margin: 1rem;
+    text-align: center;
+    color: #042d0d;
+}
+.ContactFlexLeftImg{
+    border-radius: 100%;
+    border: 1px solid black;
+    width: 4rem;
 }
