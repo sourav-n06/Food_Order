@@ -17,6 +17,8 @@ const Header = () => {
             </div>
             <div className = "nav-items">
                 <ul>
+                   <h4 className="OnlineStts">Online Status : {onlineStts ? "🟢" : "🔴"}</h4>
+
                    <li> 
                         <NavLink to = "/home" style={{ textDecoration: 'none', color: 'inherit' }}> 
                             Home 
@@ -39,16 +41,15 @@ const Header = () => {
                             Contact Us
                         </NavLink>
                     </li>
+                    <div className="login">
+                        <h4 className="log loginc" onClick = {()=> {
+                            if(LogStts == "Log in") setLogStts("Log Out")
+                            else setLogStts("Log in")
+                        }}>{LogStts}</h4>
+                    </div>
                 </ul>
             </div>
-            <div className="login">
-                    <h4>Online Status : {onlineStts ? "🟢" : "🔴"}</h4>
-
-                    <h4 className="log loginc" onClick = {()=> {
-                        if(LogStts == "Log in") setLogStts("Log Out")
-                        else setLogStts("Log in")
-                    }}>{LogStts}</h4>
-            </div>
+            
         </div>
         )
 }

@@ -25,9 +25,11 @@ class User extends React.Component {
                     <div className = "UserRight">
                         <h2 className= "userName userMargin">{name}</h2>
                         
-                        <p className = "userAbout userMargin">Creator is a BTech student from the 2026 batch of Computer Science and Engineering at Jadavpur University. They are likely passionate about technology, eager to learn, and engaged in their studies. Jadavpur University is known for its strong academic programs, especially in engineering and technology, so it's a great place for someone interested in pursuing a career in the field. Creator's involvement in the CSE program suggests they have a keen interest in computer science and are dedicated to their education. It's an exciting time to be studying in the field of technology, with so many advancements and opportunities available. User's participation in the CSE program at Jadavpur University will likely provide them with a solid foundation for their future career endeavors.
+                        <p className = "userAbout userMargin">A diligent and enthusiastic 2nd-year BTech student pursuing Computer Science and Engineering at Jadavpur University. With a passion for technology and a keen interest in programming, I am constantly exploring new concepts and technologies to expand my knowledge.
 
-                        Creator's decision to pursue a degree in Computer Science and Engineering at Jadavpur University reflects their passion for technology and their ambition to build a successful career in the tech industry. With the right combination of academic excellence, practical experience, and networking, User is well-positioned to achieve their goals and make a positive impact in the field of computer science.
+I believe in the importance of practical learning, which is why I actively participate in coding competitions and hackathons to enhance my problem-solving skills. My coursework has provided me with a strong foundation in computer science principles, and I am eager to apply this knowledge to real-world projects.
+
+Outside of academics, I enjoy collaborating with peers on coding projects and engaging in discussions about the latest developments in the tech industry. I am committed to continuous learning and growth, and I am excited about the opportunities that lie ahead in my academic and professional journey.
                         </p>
                         <h3 className ="UserLocation userMargin">Location : {location}</h3>
 

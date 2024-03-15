@@ -6,13 +6,11 @@
 }
 
 .header{
-    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #8a8a8a;
-    background-color: #f4eae5;
-}
+    background-color: #ffffff;
+    box-shadow: 0px 1px 15px rgb(162, 162, 162);}
 
 .logo{
     border-radius: 100%;
@@ -34,25 +32,29 @@
 }
 
 .nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-right: 30px;
 }
 .nav-items > ul {
     display: flex;
+    font-weight: 500;
 }
 .nav-items > ul > li {
-    font-size: 1.25rem;
+    color: #403f3f;
+    font-size: 1.15rem;
     padding: 20px;
 }
 
+.nav-items > ul > li:hover {
+    color: #ffae3c;
+}
+
 .contact {
-    border-radius: 10px;
-    box-sizing: border-box;
-    background-color: rgb(239, 67, 51);
-    color: aliceblue;
-    margin: 5px;
 }
 .contact:hover {
-    background-color: rgb(203, 86, 35);
+    color: #cf800b;
 }
 .login {
     display: flex;
@@ -617,3 +619,78 @@
     height: 0.8rem;
     background-color: #e2dfdf;
   }
+
+  .empCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .empImg{
+    width: 30rem;
+    margin-top: 1rem;
+  }
+
+  .emptxt{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .emptxtbtn{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #807f7f;
+  }
+
+  .cartSection{
+    margin:0rem 20rem ;
+  }
+
+  .cartContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0.2rem;
+    border-bottom: 1.5px solid #807f7f;
+    align-items: center;
+
+  }
+.cartBtn{
+    cursor: pointer;
+    background-color: #4eb347;
+    border-radius: 5px;
+    padding: 6.5px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+.OnlineStts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderNow {
+    padding: 0.5rem;
+    background-color: #fbd411;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+.addMore{
+    padding: 0.5rem;
+    background-color: #f4eabf;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.buy{
+    justify-content: space-between;
+    display: flex;
+    padding: 1.5rem;
+}

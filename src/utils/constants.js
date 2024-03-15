@@ -1,4 +1,4 @@
-export const LOGO_URL = "https://upload.wikimedia.org/wikipedia/commons/c/cd/Logo_Red_Food.PNG";
+export const LOGO_URL = "https://as2.ftcdn.net/v2/jpg/04/96/48/39/1000_F_496483977_KJkkZ6YSJu05jLvB9gnfcdNMsA8Ut2ql.jpg";
 
 
 export const FOOD_IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
