@@ -62,7 +62,7 @@ const Body =()=>{
                     <button className = "fliter-btn" onClick = {() => {
                         const filtered = ListRes.filter((res) => res.info.avgRating > 4);
                         setListRes(filtered);
-                        }} > Top Retaled Resturent 
+                        }} > Top Retaled Restaurants
                     </button>
                 </div>
             </div>
